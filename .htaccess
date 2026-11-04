@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Aturan untuk halaman Travel&Pindahan
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^travel&pindahan$ Travel&Pindahan.html [NC,L]
+
+# Aturan untuk halaman Bengkel
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^bengkel$ bengkel.html [NC,L]
